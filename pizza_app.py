@@ -5,7 +5,7 @@ from datetime import datetime
 
 # --- 1. CONFIGURATIE ---
 # Jouw API Key uit de screenshots
-API_KEY = 'AIzaSyBWa7fO-vuLHDE38VostjS877wU8igrn2I' 
+API_KEY = st.secrets["MAPS_API_KEY"]
 gmaps = googlemaps.Client(key=API_KEY)
 
 # Pagina-instellingen voor een professionele look
